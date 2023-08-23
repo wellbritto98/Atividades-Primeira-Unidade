@@ -6,10 +6,10 @@
 #Neste momento o programa deverá ser encerrado, exibindo o relatório do dia, que conterá a quantidade e o valor total de prestações pagas no dia.
 #O cálculo do valor a ser pago é feito da seguinte forma.
 #Para pagamentos sem atraso, cobrar o valor da prestação.
-
 #Quando houver atraso, cobrar 3% de multa, mais 0,1% de juros por dia de atraso.
 
 relatorio_do_dia = {"quantidade":0, "valor":0}
+
 def valorPagamento(valor, dias):
     if dias == 0:
         return valor
@@ -20,16 +20,23 @@ def valorPagamento(valor, dias):
         relatorio_do_dia["valor"] += valor + multa + juros
         return valor + multa + juros
 
-valor=1 #não pode ser 0, pois o programa não entra no while, mesmo sendo 1, a variavel será alterada no while
-while valor!= 0:
-    valor = float(input("Digite o valor da prestação: "))
-    dias = int(input("Digite o numero de dias em atraso: "))
-    print("O valor a ser pago é: ", valorPagamento(valor, dias))
+dias = 1
+
+while dias!= 0:
+    dias = int(input("Digite o numero de dias em atraso: "))   
+    if dias!= 0:
+        valor = float(input("Digite o valor da prestação: "))
+        print("O valor a ser pago é: ", valorPagamento(valor, dias))
+    else:
+        if dias == 0:
+            print("\nO relatório do dia é:\n ")
+            print("Quantidade de prestações pagas: ", relatorio_do_dia["quantidade"])
+            print("Valor total de prestações pagas: ", round(relatorio_do_dia["valor"],2))
+            print("\nPrograma encerrado.\n")
+        break    
     
-if valor == 0:
-    print("\nO relatório do dia é:\n ")
-    print("Quantidade de prestações pagas: ", relatorio_do_dia["quantidade"])
-    print("Valor total de prestações pagas: ", relatorio_do_dia["valor"])
+
+
         
     
         
