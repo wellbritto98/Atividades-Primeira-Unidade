@@ -1,0 +1,6 @@
+##Q:Gere um texto de 250 caractereres
+##Q:Gere um arquivo com o texto gerado
+##Q:Gere um arquivo com o texto gerado com todas as letras maiúsculas
+##Q:Gere um arquivo com o texto gerado com todas as letras minúsculas
+##Q:Gere um arquivo com o texto gerado com todas as letras maiúsculas e minúsculas invertidas
+##Q:Gere um arquivo com o texto gerado com todas as letras maiúsculas e minúsculas ordenadas alfabeticamente

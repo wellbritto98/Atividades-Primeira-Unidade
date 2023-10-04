@@ -41,10 +41,10 @@ while dia < 1 or dia > 31:
     dia = int(input("Digite o dia do seu nascimento: "))
 mes = input("Digite o mês do seu nascimento: ")
 
-if mes != "1" and mes != "2" and mes != "3" and mes != "4" and mes != "5" and mes != "6" and mes != "7" and mes != "8" and mes != "9" and mes != "10" and mes != "11" and mes != "12":
-    while mes != "1" and mes != "2" and mes != "3" and mes != "4" and mes != "5" and mes != "6" and mes != "7" and mes != "8" and mes != "9" and mes != "10" and mes != "11" and mes != "12":
-        print("Mês inválido.")
-        mes = input("Digite o mês do seu nascimento: ")        	
+
+while mes != "1" and mes != "2" and mes != "3" and mes != "4" and mes != "5" and mes != "6" and mes != "7" and mes != "8" and mes != "9" and mes != "10" and mes != "11" and mes != "12":
+    print("Mês inválido.")
+    mes = input("Digite o mês do seu nascimento: ")        	
     
 
 

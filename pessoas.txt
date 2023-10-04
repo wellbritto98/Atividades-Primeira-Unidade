@@ -1,0 +1,8 @@
+1         jose               50.0          25.38%
+2         maria               34.0          17.26%
+3         joao               53.0          26.9%
+4         teo               60.0          30.46%
+
+
+Espa�o Total: 197.0
+Media do armazenamento utilizado: 49.25
